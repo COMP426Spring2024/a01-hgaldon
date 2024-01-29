@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mythology Hub</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function goToPage() {
+            var selectedMyth = document.getElementById('myth-selector').value;
+            window.location.href = selectedMyth;
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Mythology Hub</h1>
+        <nav>
+            <form>
+                <select name="myths" id="myth-selector" onchange="goToPage()">
+                    <option value="">--Select a Myth--</option>
+                    <option value="page1.html">Cupid & Psyche</option>
+                    <option value="page2.html">Prometheus</option>
+                </select>
+            </form>
+            <div class="image-container">
+                <img src="images/mainpageimg.png" alt="Minotaur" id="centered-image">
+            </div>
+        </nav>
+    </header>
+    <main>
+        <h2>Mythological Figures</h2>
+        <div class="table-container">
+            <table class="centeredmain">
+                <tr>
+                    <th>Name</th>
+                </tr>
+                <tr>
+                    <td>Cupid</td>
+                </tr>
+                <tr>
+                    <td>Psyche</td>
+                </tr>
+                <tr>
+                    <td>Prometheus</td>
+                </tr>
+            </table>
+        </div>
+    </main>
+    <footer>
+        <h3>Mythology Hub</h3>
+    </footer>
+</body>
+</html>

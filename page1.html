@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mythology Hub</title>
+        <link rel="stylesheet" href="styles.css">
+        <script>
+            function goToPage() {
+                var selectedMyth = document.getElementById('myth-selector').value;
+                window.location.href = selectedMyth;
+            }
+        </script>
+    </head>
+    <body>
+        <header>
+            <h1>Mythology Hub</h1>
+            <nav>
+                <form>
+                    <select name="myths" id="myth-selector" onchange="goToPage()">
+                        <option value="">--Select a Myth--</option>
+                        <option value="page2.html">Prometheus</option>
+                        <option value="index.html">Home</option>
+                    </select>
+                </form>
+            </nav>
+        </header>
+    <main>
+        <article>
+            <h2>The Tale of Cupid and Psyche</h2>
+            <img src="images/cupid-psyche.jpg" alt="Cupid and Psyche" id="centered-image">
+        </article>
+        <h2>Mythological Figures</h2>
+        <div class="table-container">
+            <table class="centered">
+                <tr>
+                    <th>Name</th>
+                    <th>Role</th>
+                </tr>
+                <tr>
+                    <td>Cupid</td>
+                    <td>God of Love</td>
+                </tr>
+                <tr>
+                    <td>Psyche</td>
+                    <td>Mortal turned Goddess</td>
+                </tr>
+            </table>
+        </div>
+        <article>
+            <p>
+                Psyche was a woman of such stunning beauty that she rivaled even Venus, the goddess of love. Jealous of the attention Psyche received, Venus sent her son Cupid to cast a spell on Psyche, making her fall in love with a monster. However, upon seeing Psyche's beauty, Cupid himself fell deeply in love with her.
+            </p>
+            <p>
+                Cupid arranged for Psyche to be brought to his palace, a magnificent place hidden in the woods. He visited her every night, but he made her promise never to look upon his face. Psyche's life was filled with luxury and happiness, yet she grew lonely for her family and the touch of her invisible lover.
+            </p>
+            <p>
+                Influenced by her envious sisters, Psyche decided to look upon Cupid's face while he slept. As she gazed upon him, she realized he was no monster but the most beautiful of gods. However, a drop of oil fell from her lamp, awakening and enraging Cupid. He fled, leaving Psyche alone and heartbroken.
+            </p>
+            <p>
+                Determined to win back Cupid's love, Psyche sought the help of Venus. However, Venus, still envious of Psyche's beauty, gave her four seemingly impossible tasks to complete. With cunning and the assistance of natural forces, Psyche completed each task. Yet, her final task led her to the Underworld, a journey from which few returned.
+            </p>
+            <p>
+                In the Underworld, Psyche retrieved a box of beauty from Persephone. However, curiosity led her to open it, and she was cast into a deathlike sleep. Cupid, having forgiven Psyche, came to her rescue. He awakened her with a kiss and pleaded with Jupiter, the king of the gods, to grant Psyche immortality.
+            </p>
+            <p>
+                Moved by their love and Psyche's perseverance, Jupiter agreed. Psyche was granted the gift of immortality, and the lovers were united forever. The gods celebrated their marriage with a grand feast, marking the union of Cupid and Psyche as a testament to love's enduring power.
+            </p>
+        </article>
+            <div>
+                <h3>Major Themes</h3>
+                <ul>
+                    <li>The power of love and trust</li>
+                    <li>The journey of the soul towards immortality</li>
+                    <li>The intervention of the divine in mortal affairs</li>
+                </ul>
+            </div>
+        </main>
+        <footer>
+            <h3>Mythology Hub</h3>
+        </footer>
+    </body>
+</html>

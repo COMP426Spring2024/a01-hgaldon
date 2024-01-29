@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mythology Hub</title>
+        <link rel="stylesheet" href="styles.css">
+        <script>
+            function goToPage() {
+                var selectedMyth = document.getElementById('myth-selector').value;
+                window.location.href = selectedMyth;
+            }
+        </script>
+    </head>
+    <body>
+        <header>
+            <h1>Mythology Hub</h1>
+            <nav>
+                <form>
+                    <select name="myths" id="myth-selector" onchange="goToPage()">
+                        <option value="">--Select a Myth--</option>
+                        <option value="page1.html">Cupid and Psyche</option>
+                        <option value="index.html">Home</option>
+                    </select>
+                </form>
+            </nav>
+        </header>
+    <main>
+        <article>
+            <h2>The Legend of Prometheus</h2>
+            <img src="images/prometheus.jpg" alt="Prometheus" id="centered-image">
+        </article>
+        <h2>Mythological Figures</h2>
+        <div class="table-container">
+            <table class="centered">
+                <tr>
+                    <th>Name</th>
+                    <th>Role</th>
+                </tr>
+                <tr>
+                    <td>Prometheus</td>
+                    <td>Titian, Creator of Mankind</td>
+                </tr>
+            </table>
+        </div>
+        <article>
+            <p>
+                Prometheus, a titan known for his wits and intelligence, played a pivotal role in the creation of mankind. In some tales, it is said that he molded humans out of clay. Prometheus was a champion for humanity, often at odds with Zeus, the king of the gods, over his fondness for humans.
+            </p>
+            <p>
+                The most famous tale of Prometheus is about the theft of fire. In ancient times, fire was a divine secret, known only to the gods. However, Prometheus defied Zeus and stole fire from Mount Olympus, giving it to humanity. This gift enabled progress and civilization but angered Zeus greatly.
+            </p>
+            <p>
+                As punishment for his transgression, Zeus had Prometheus bound to a rock where an eagle, the emblem of Zeus, was sent to eat Prometheus' liver. His liver would regenerate every night, only to be eaten again the next day, in an eternal cycle of punishment. His torment lasted for many years until he was eventually freed by Hercules, the great hero of Greek mythology.
+            </p>
+            <p>
+                The story of Prometheus is a tale of resilience and defiance. It reflects the human spirit's unyielding quest for knowledge and the power of wit against tyranny. The legend underscores the complexities of the relationship between gods and mortals and the consequences of daring to defy divine authority.
+            </p>
+        </article>
+        <div>
+            <h3>Major Themes</h3>
+            <ul>
+                <li>Defiance against divine authority</li>
+                <li>The gift of fire as a symbol of knowledge and enlightenment</li>
+                <li>Endurance and resilience in the face of suffering</li>
+            </ul>
+        </div>
+    </main>
+    <footer>
+        <h3>Mythology Hub</h3>
+    </footer>
+</body>
+</html>
