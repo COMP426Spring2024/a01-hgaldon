@@ -5,48 +5,38 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Mythology Hub</title>
         <link rel="stylesheet" href="styles.css">
-        <script>
-            function goToPage() {
-                var selectedMyth = document.getElementById('myth-selector').value;
-                window.location.href = selectedMyth;
+        <style>
+            .btn {
+                display: inline-block;
+                background-color: #007BFF;
+                color: white;
+                padding: 10px 20px;
+                text-decoration: none;
+                border-radius: 5px;
+                font-size: 16px;
+                margin: 5px 0; /* Adjusts spacing around buttons */
+                transition: background-color 0.3s;
             }
-        </script>
+    
+            .btn:hover {
+                background-color: #0056b3;
+            }
+        </style>
     </head>
     <body>
         <header>
             <h1>Mythology Hub</h1>
-            <nav>
-                <form>
-                    <select name="myths" id="myth-selector" onchange="goToPage()">
-                        <option value="">--Select a Myth--</option>
-                        <option value="page2.html">Prometheus</option>
-                        <option value="index.html">Home</option>
-                    </select>
-                </form>
-            </nav>
+            <h3>Mythological Figures</h2>
+            <div class="table-container">
+                <a href="index.html" class="btn">Home</a>
+                <a href="page2.html" class="btn">Prometheus</a>
+            </div>
         </header>
     <main>
         <article>
             <h2>The Tale of Cupid and Psyche</h2>
             <img src="images/cupid-psyche.jpg" alt="Cupid and Psyche" id="centered-image">
         </article>
-        <h2>Mythological Figures</h2>
-        <div class="table-container">
-            <table class="centered">
-                <tr>
-                    <th>Name</th>
-                    <th>Role</th>
-                </tr>
-                <tr>
-                    <td>Cupid</td>
-                    <td>God of Love</td>
-                </tr>
-                <tr>
-                    <td>Psyche</td>
-                    <td>Mortal turned Goddess</td>
-                </tr>
-            </table>
-        </div>
         <article>
             <p>
                 Psyche was a woman of such stunning beauty that she rivaled even Venus, the goddess of love. Jealous of the attention Psyche received, Venus sent her son Cupid to cast a spell on Psyche, making her fall in love with a monster. However, upon seeing Psyche's beauty, Cupid himself fell deeply in love with her.

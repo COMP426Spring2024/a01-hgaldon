@@ -16,19 +16,9 @@ header {
     text-align: center;
 }
 
-nav ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
 a {
     text-decoration: none;
-    color: #ffffff;
+    color: #000000;
 }
 
 a:hover {
@@ -61,10 +51,6 @@ article {
 
 #main-title {
     font-family: 'Georgia', serif;
-}
-
-nav ul li a {
-    font-size: 1.2em;
 }
 
 table {
@@ -115,12 +101,6 @@ footer {
 .custom-margin {
     margin: 15px;
 }
-
-.table-container {
-    width: 50%;
-    margin: 0 auto; 
-}
-
 .centered {
     width: 100%;
     margin-left: auto;
@@ -136,6 +116,15 @@ footer {
 }
 
 h2 {
-    padding: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+h3 {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.table-container {
     text-align: center;
 }

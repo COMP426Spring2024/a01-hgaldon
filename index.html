@@ -5,24 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mythology Hub</title>
     <link rel="stylesheet" href="styles.css">
-    <script>
-        function goToPage() {
-            var selectedMyth = document.getElementById('myth-selector').value;
-            window.location.href = selectedMyth;
+    <style>
+        .btn {
+            display: inline-block;
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+            margin: 5px 0; /* Adjusts spacing around buttons */
+            transition: background-color 0.3s;
         }
-    </script>
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
 <body>
     <header>
         <h1>Mythology Hub</h1>
         <nav>
-            <form>
-                <select name="myths" id="myth-selector" onchange="goToPage()">
-                    <option value="">--Select a Myth--</option>
-                    <option value="page1.html">Cupid & Psyche</option>
-                    <option value="page2.html">Prometheus</option>
-                </select>
-            </form>
             <div class="image-container">
                 <img src="images/mainpageimg.png" alt="Minotaur" id="centered-image">
             </div>
@@ -31,20 +35,8 @@
     <main>
         <h2>Mythological Figures</h2>
         <div class="table-container">
-            <table class="centeredmain">
-                <tr>
-                    <th>Name</th>
-                </tr>
-                <tr>
-                    <td>Cupid</td>
-                </tr>
-                <tr>
-                    <td>Psyche</td>
-                </tr>
-                <tr>
-                    <td>Prometheus</td>
-                </tr>
-            </table>
+            <a href="page1.html" class="btn">Cupid & Psyche</a>
+            <a href="page2.html" class="btn">Prometheus</a>
         </div>
     </main>
     <footer>

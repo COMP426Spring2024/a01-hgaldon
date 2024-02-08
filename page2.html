@@ -5,44 +5,38 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Mythology Hub</title>
         <link rel="stylesheet" href="styles.css">
-        <script>
-            function goToPage() {
-                var selectedMyth = document.getElementById('myth-selector').value;
-                window.location.href = selectedMyth;
+        <style>
+            .btn {
+                display: inline-block;
+                background-color: #007BFF;
+                color: white;
+                padding: 10px 20px;
+                text-decoration: none;
+                border-radius: 5px;
+                font-size: 16px;
+                margin: 5px 0; /* Adjusts spacing around buttons */
+                transition: background-color 0.3s;
             }
-        </script>
+    
+            .btn:hover {
+                background-color: #0056b3;
+            }
+        </style>
     </head>
     <body>
         <header>
             <h1>Mythology Hub</h1>
-            <nav>
-                <form>
-                    <select name="myths" id="myth-selector" onchange="goToPage()">
-                        <option value="">--Select a Myth--</option>
-                        <option value="page1.html">Cupid and Psyche</option>
-                        <option value="index.html">Home</option>
-                    </select>
-                </form>
-            </nav>
+            <h3>Mythological Figures</h2>
+            <div class="table-container">
+                <a href="index.html" class="btn">Home</a>
+                <a href="page1.html" class="btn">Cupid & Psyche</a>
+            </div>
         </header>
     <main>
         <article>
             <h2>The Legend of Prometheus</h2>
             <img src="images/prometheus.jpg" alt="Prometheus" id="centered-image">
         </article>
-        <h2>Mythological Figures</h2>
-        <div class="table-container">
-            <table class="centered">
-                <tr>
-                    <th>Name</th>
-                    <th>Role</th>
-                </tr>
-                <tr>
-                    <td>Prometheus</td>
-                    <td>Titian, Creator of Mankind</td>
-                </tr>
-            </table>
-        </div>
         <article>
             <p>
                 Prometheus, a titan known for his wits and intelligence, played a pivotal role in the creation of mankind. In some tales, it is said that he molded humans out of clay. Prometheus was a champion for humanity, often at odds with Zeus, the king of the gods, over his fondness for humans.
